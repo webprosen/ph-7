@@ -1,3 +1,4 @@
+// 5. This function takes three numbers as parameters and calculates, compares and finally returns a number!
 function gemsToDiamond(firstFriendGemsQty, secondFriendGemsQty, thirdFriendGemsQty) {
 
     if (typeof firstFriendGemsQty === 'number' && typeof secondFriendGemsQty === 'number' && typeof thirdFriendGemsQty === 'number') {
@@ -25,4 +26,4 @@ function gemsToDiamond(firstFriendGemsQty, secondFriendGemsQty, thirdFriendGemsQ
     }
 }
 
-console.log(gemsToDiamond(1, 0, 0));
+console.log(gemsToDiamond(1, "fgdfgdf", 0));

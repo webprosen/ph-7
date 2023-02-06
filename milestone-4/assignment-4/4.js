@@ -1,3 +1,4 @@
+// #4. This function takes an array as parameter, filters out the negative items and creates a new array and returns the length of the new array!
 function findingBadData(numbers) {
     if (Array.isArray(numbers) === true) {
         const badData = [];

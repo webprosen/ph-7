@@ -1,5 +1,6 @@
+// This function take one positive number as parameter & return number when calculation is over!
 function mindGame(number) {
-	if (typeof number == 'number' && number >= 0) {
+	if (typeof number === 'number' && number >= 0) {
 		let result = number;
 		result = result * 3;
 		result = result + 10;

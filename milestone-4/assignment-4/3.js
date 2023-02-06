@@ -1,5 +1,6 @@
+// #3 This function takes a number as a parameter and returns compare value based on input number!
 function isLGSeven(number) {
-    if (typeof number == 'number') {
+    if (typeof number === 'number') {
         const difference = number - 7;
         if (difference < 7 ) {
             return difference;
@@ -12,5 +13,5 @@ function isLGSeven(number) {
     }
 }
 
-const number = 16;
+const number = 15;
 console.log(isLGSeven(number));
