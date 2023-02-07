@@ -1,4 +1,5 @@
-// #1 This function accepts a positive number as a parameter & Number returned as output when calculation is complete!
+// First Problem
+// This function accepts a positive number as a parameter & Number returned as output when calculation is complete!
 function mindGame(number) {
 	if (typeof number === 'number' && number >= 0) {
 		let result = number;
@@ -13,7 +14,9 @@ function mindGame(number) {
 	}
 }
 
-// #2 This function takes a string as a parameter and returns the even/odd status based on the string!
+
+// Second Problem
+// This function takes a string as a parameter and returns the even/odd status based on the string!
 function evenOdd(text) {
     if (typeof text === 'string') {
         const textLength = text.length;
@@ -30,7 +33,9 @@ function evenOdd(text) {
     }
 }
 
-// #3 This function takes a number as a parameter and returns compare value based on input number!
+
+// Third Problem
+// This function takes a number as a parameter and returns compare value based on input number!
 function isLGSeven(number) {
     if (typeof number === 'number') {
         const difference = number - 7;
@@ -45,7 +50,9 @@ function isLGSeven(number) {
     }
 }
 
-// #4. This function takes an array as parameter, filters out the negative items and creates a new array and returns the length of the new array!
+
+// Fourth Problem
+// This function takes an array as parameter, filters out the negative items and creates a new array and returns the length of the new array!
 function findingBadData(numbers) {
     if (Array.isArray(numbers) === true) {
         const badData = [];
@@ -63,7 +70,9 @@ function findingBadData(numbers) {
     }
 }
 
-// 5. This function takes three numbers as parameters and calculates, compares and finally returns a number!
+
+// Fifth Problem
+// This function takes three numbers as parameters and calculates, compares and finally returns a number!
 function gemsToDiamond(firstFriendGemsQty, secondFriendGemsQty, thirdFriendGemsQty) {
 
     if (typeof firstFriendGemsQty === 'number' && typeof secondFriendGemsQty === 'number' && typeof thirdFriendGemsQty === 'number') {
