@@ -8,14 +8,10 @@ function mindGame(number) {
 		result = result - 5;
 		return result;
 	} else {
-		const warning = "Please give positive number!";
+		const warning = "Please give a positive number!";
 		return warning;
 	}
 }
-// const number = 50;
-// console.log(mindGame(number));
-
-
 
 // #2 This function takes a string as a parameter and returns the even/odd status based on the string!
 function evenOdd(text) {
@@ -29,14 +25,10 @@ function evenOdd(text) {
             return result;
         }
     } else {
-        const warning = "Please give the string!";
+        const warning = "Please give the string type data!";
         return warning;
     }
 }
-// const text = 'Hello';
-// console.log(evenOdd(text));
-
-
 
 // #3 This function takes a number as a parameter and returns compare value based on input number!
 function isLGSeven(number) {
@@ -48,14 +40,10 @@ function isLGSeven(number) {
             return number * 2;
         }
     } else {
-        const warning = "Please give a number!";
+        const warning = "Please give a number type data!";
         return warning;
     }
 }
-// const number = 6;
-// console.log(isLGSeven(number));
-
-
 
 // #4. This function takes an array as parameter, filters out the negative items and creates a new array and returns the length of the new array!
 function findingBadData(numbers) {
@@ -74,11 +62,6 @@ function findingBadData(numbers) {
         return warning;
     }
 }
-
-// const numbers = [22, 20];
-// console.log(findingBadData(numbers));
-
-
 
 // 5. This function takes three numbers as parameters and calculates, compares and finally returns a number!
 function gemsToDiamond(firstFriendGemsQty, secondFriendGemsQty, thirdFriendGemsQty) {
@@ -103,9 +86,7 @@ function gemsToDiamond(firstFriendGemsQty, secondFriendGemsQty, thirdFriendGemsQ
         }
         
     } else {
-        const warning = "Please enter valid number!";
+        const warning = "Please give number type data!";
         return warning;
     }
 }
-
-// console.log(gemsToDiamond(100, 5, 1));

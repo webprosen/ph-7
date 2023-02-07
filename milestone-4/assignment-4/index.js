@@ -8,7 +8,7 @@ function mindGame(number) {
 		result = result - 5;
 		return result;
 	} else {
-		const warning = "Please give positive number!";
+		const warning = "Please give a positive number!";
 		return warning;
 	}
 }
@@ -29,7 +29,7 @@ function evenOdd(text) {
             return result;
         }
     } else {
-        const warning = "Please give the string!";
+        const warning = "Please give the string type data!";
         return warning;
     }
 }
@@ -48,7 +48,7 @@ function isLGSeven(number) {
             return number * 2;
         }
     } else {
-        const warning = "Please give a number!";
+        const warning = "Please give a number type data!";
         return warning;
     }
 }
@@ -103,9 +103,9 @@ function gemsToDiamond(firstFriendGemsQty, secondFriendGemsQty, thirdFriendGemsQ
         }
         
     } else {
-        const warning = "Please enter valid number!";
+        const warning = "Please give number type data!";
         return warning;
     }
 }
 
-// console.log(gemsToDiamond(100, 5, 1));
+console.log(gemsToDiamond(100, ["jjhh"], 1));
