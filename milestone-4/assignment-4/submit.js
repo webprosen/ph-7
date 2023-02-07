@@ -99,3 +99,4 @@ function gemsToDiamond(firstFriendGemsQty, secondFriendGemsQty, thirdFriendGemsQ
         return warning;
     }
 }
+
