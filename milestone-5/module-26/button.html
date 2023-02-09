@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="info">My secret info</div>
+<br>
+<input type="text" name="" id="my-input" placeholder="Please type delete">
+<button id="delete-btn" disabled>Delete</button>
+
+
+<script>
+    document.getElementById('my-input').addEventListener('keyup', function () {
+        if(document.getElementById('my-input').value == 'delete'){
+            document.getElementById('delete-btn').removeAttribute('disabled');
+        }else{
+            document.getElementById('delete-btn').setAttribute('disabled', '');
+        }
+    });
+
+    document.getElementById('delete-btn').addEventListener('click', function () {
+        document.querySelector('.info').style.display = 'none';
+    });
+    // document.getElementById('my-input').addEventListener('focus', function () {
+    //     console.log('focus');
+    // });
+    // document.getElementById('my-input').addEventListener('blur', function () {
+    //     console.log('blur');
+    // });
+    // document.getElementById('my-input').addEventListener('keyup', function (event) {
+    //     console.log(event.target);
+    // });
+    // document.getElementById('my-input').addEventListener('keyup', function () {
+    //     console.log('keyup');
+    // });
+</script>
+
+<script src="button.js"></script>
+</body>
+</html>
