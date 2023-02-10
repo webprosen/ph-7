@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        #list-section{
+            padding: 50px;
+            background-color: #999;
+        }
+        #container{
+            padding: 50px;
+            background-color: #888;
+        }
+        #my-list{
+            padding: 50px;
+            background-color: #777;
+        }
+        #my-list li{
+            padding: 10px 0;
+            list-style-position: inside;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<section id="list-section">
+    <h3>Section</h3>
+    <div id="container">
+        <h3>Container</h3>
+        <ul id="my-list">
+            <h3>List</h3>
+            <li id="item-1">This is list item</li>
+            <li id="item-2">This is list item</li>
+            <li id="item-3">This is list item</li>
+            <li id="item-4">This is list item</li>
+            <li id="item-5">This is list item</li>
+            <li id="item-6">This is list item</li>
+        </ul>
+    </div>
+</section>
+
+
+<script>
+    document.getElementById('item-2').addEventListener('click', function(event) {
+        console.log("Item 2 Clicked");
+        event.stopImmediatePropagation();
+    });
+    document.getElementById('item-2').addEventListener('click', function(event) {
+        console.log("Item 2 Clicked...");
+    });
+    document.getElementById('item-2').addEventListener('click', function(event) {
+        console.log("Item 2 Clicked......");
+    });
+
+    document.getElementById('my-list').addEventListener('click', function(){
+        console.log("Ul Clicked");
+    });
+    document.getElementById('container').addEventListener('click', function(){
+        console.log("container Clicked");
+    });
+    document.getElementById('list-section').addEventListener('click', function(){
+        console.log("section Clicked");
+    });
+</script>
+
+
+<script src="bubble.js"></script>  
+</body>
+</html>

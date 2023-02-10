@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        #list-section{
+            padding: 50px;
+            background-color: #999;
+        }
+        #container{
+            padding: 50px;
+            background-color: #888;
+        }
+        #my-list{
+            padding: 50px;
+            background-color: #777;
+        }
+        #my-list li{
+            padding: 10px 0;
+            list-style-position: inside;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <section id="list-section">
+        <h3>Section</h3>
+        <div id="container">
+            <h3>Container</h3>
+            <ul id="my-list">
+                <h3>My List</h3><button id="add-btn">Add Me</button>
+                <li class="item item-1">This is list item</li>
+                <li class="item item-2">This is list item</li>
+                <li class="item item-3">This is list item</li>
+                <li class="item item-4">This is list item</li>
+                <li class="item item-5">This is list item</li>
+                <li class="item item-6">This is list item</li>
+            </ul>
+        </div>
+    </section>
+
+
+
+<script>
+
+    // const items = document.querySelectorAll('.item');
+    // for(const item of items){
+    //     // console.log(item);
+    //     item.addEventListener('click', function(event){
+    //         event.target.parentNode.removeChild(event.target);
+    //     });
+    // }
+
+    document.getElementById('my-list').addEventListener('click', function(event){
+        event.target.parentNode.removeChild(event.target);
+    });
+
+    document.getElementById('add-btn').addEventListener('click', function(){
+        const myList = document.getElementById('my-list');
+        const li = document.createElement('li');
+        li.innerText = "Hello new li";
+        li.classList.add('item');
+        myList.appendChild(li);
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
