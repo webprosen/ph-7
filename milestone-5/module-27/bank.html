@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bank</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                    sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h2 class="text-violet-600 text-4xl font-bold text-center mt-8">My Bank</h2>
+    </header>
+
+    <main>
+
+        <section class="max-w-6xl mx-auto px-6 py-12">
+            <div class="grid gap-12 grid-cols-1 lg:grid-cols-3 font-bold">
+                <div class="bg-green-400 p-8 rounded-lg">
+                    <div>Deposit</div>
+                    <strong class="text-3xl">$<span id="dashboard-deposit">00.00</span></strong>
+                </div>
+                <div class="bg-red-400 p-8 rounded-lg">
+                    <div>Withdraw</div>
+                    <strong class="text-3xl">$<span id="dashboard-withdraw">00.00</span></strong>
+                </div>
+                <div class="bg-violet-400 p-8 rounded-lg">
+                    <div>Balance</div>
+                    <strong class="text-3xl">$<span id="dashboard-balance">00.00</span></strong>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="max-w-6xl mx-auto px-6">
+            <div class="grid gap-12 grid-cols-1 lg:grid-cols-2">
+                <div class="bg-green-400 p-8 rounded-lg">
+                    <h2 class="text-xl mb-3">Please Deposit</h2>
+                    <div class="">
+                        <input type="text" id="deposit-field" class="rounded-md mb-4 p-2">
+                    </div>
+                    <button class="bg-gray-900 text-white py-2 px-10 rounded-md" id="btn-deposit">Deposit</button>
+                </div>
+                <div class="bg-red-400 p-8 rounded-lg">
+                    <h2 class="text-xl mb-3">Please Withdraw</h2>
+                    <div>
+                        <input type="text" id="withdraw-field" class="rounded-md mb-4 p-2">
+                    </div>
+                    <button class="bg-gray-900 text-white py-2 px-10 rounded-md" id="btn-withdraw">Withdraw</button>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="deposit.js"></script>
+    <script src="withdraw.js"></script>
+</body>
+</html>
