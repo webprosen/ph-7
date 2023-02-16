@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Mater</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="max-w-5xl mx-auto">
+        <div class="grid gap-8 grid-cols-2">
+            <div class="">
+                <img src="money.jpg" alt="">
+            </div>
+            <div class="bg-gray-300 p-8 text-center">
+
+                <div class="mb-10">
+                    <h2 class="text-2xl font-bold mb-5">Income</h2>
+                    <label for="" class="text-lg mr-2">Income: </label>
+                    <input type="text" name="" id="income" class="rounded-md p-1"><br>
+                    <span id="income-error" class="text-red-500 text-sm"></span>
+                </div>
+                
+                <div class="mb-10">
+                    <h2 class="text-2xl font-bold mb-5 mt-5">Expenses</h2>
+                    <div class="mb-5">
+                        <label for="" class="text-lg mr-2 mb-2">Food: </label>
+                        <input type="text" name="" id="food" class="rounded-md p-1">
+                    </div>
+                    <div class="mb-5">
+                        <label for="" class="text-lg mr-2">Rent: </label>
+                        <input type="text" name="" id="rent" class="rounded-md p-1">
+                    </div>
+                    <div class="mb-5">
+                        <label for="" class="text-lg mr-2">Clothes: </label>
+                        <input type="text" name="" id="clothes" class="rounded-md p-1">
+                    </div>
+                    <button class="bg-blue-400 text-white px-5 py-2 font-bold mb-4 rounded-md" id="calculate">Calculate</button>
+                    <div class="text-lg font-bold">Total Expenses: <span id="total-expenses">0</span></div>
+                    <div class="text-lg font-bold">Balance: <span id="balance">0</span></div>
+                </div>
+
+                <div class="">
+                    <label for="" class="text-lg mr-2">Save: </label>
+                    <input type="text" name="" id="clothes" class="rounded-md p-1">
+                    <span>%</span>
+                    <button class="bg-blue-400 text-white px-5 py-2 font-bold mb-4 rounded-md">Save</button>
+                    <div class="text-lg font-bold">Saving Amount: <span id="total-expenses">0</span></div>
+                    <div class="text-lg font-bold">Remaining Balance: <span id="balance">0</span></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
